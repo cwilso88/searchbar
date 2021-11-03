@@ -8,6 +8,9 @@ const App = () => {
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   }
+  const filteredBooks = books.filter((book) => {
+    return book.name.includes(searchTerm);
+  })
 
   return (
     <div className="App">
