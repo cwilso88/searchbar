@@ -16,6 +16,7 @@ const App = () => {
   return (
     <section>
       <Search name="search" onSearch={handleInputChange}/>
+      <Books books={filteredBooks}/>
     </section>
   );
 }
