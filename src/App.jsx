@@ -10,12 +10,13 @@ const App = () => {
   }
   const filteredBooks = books.filter((book) => {
     return book.name.includes(searchTerm);
-  })
+  });
+
 
   return (
-    <div className="App">
-      
-    </div>
+    <section>
+      <Search name="search" onSearch={handleInputChange}/>
+    </section>
   );
 }
 
