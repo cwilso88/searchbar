@@ -1,0 +1,16 @@
+export const name = [
+    {name: "Kam"}, 
+    {name: "Jude"},
+    {name: "Ava"}, 
+    {name: "Micheal"},
+    {name: "Zane"}, 
+    {name: "Amber"},
+    {name: "Loni"}, 
+    {name: "Billy"},
+    {name: "Sam"}, 
+    {name: "Samantha"},
+    {name: "Mika"}, 
+    {name: "Poppy"},
+    {name: "Todd"}, 
+    {name: "Evan"},
+];
