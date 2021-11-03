@@ -5,7 +5,9 @@ import Search from './features/Search';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  
+  const handleInputChange = (e) => {
+    setSearchTerm(e.target.value);
+  }
 
   return (
     <div className="App">
