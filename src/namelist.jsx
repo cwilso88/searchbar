@@ -1,4 +1,4 @@
-export const name = [
+export const names = [
     {name: "Kam"}, 
     {name: "Jude"},
     {name: "Ava"}, 
