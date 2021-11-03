@@ -11,11 +11,15 @@ const App = () => {
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   }
+  const [searchName, setSearchName] = useState("");
+  const handleNameInputChange = (e) => {
+    setSearchName(e.target.value);
+  }
   const filteredBooks = books.filter((book) => {
     return book.name.includes(searchTerm);
   });
   const filteredNames = names.filter((name) => {
-    return names.name.includes(searchTerm);
+    return name.name.includes(searchName);
   })
 
 
@@ -25,7 +29,8 @@ const App = () => {
       <Books books={filteredBooks}/>
 
       <div>
-    
+        <Searchbar name="search" onSearch={handleNameInputChange}/>
+        <Names names={filteredNames}/>
       </div>
     </section>
   );
